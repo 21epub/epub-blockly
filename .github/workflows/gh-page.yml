@@ -35,7 +35,7 @@ jobs:
 
       - run: yarn install --frozen-lockfile
       - run: yarn test -- --silent
-      - run: yarn build
+      - run: BASE_PATH=/epub-blockly yarn build
       - run: yarn export
 
       - name: Deploy
