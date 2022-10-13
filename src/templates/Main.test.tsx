@@ -22,7 +22,7 @@ describe('Main template', () => {
       const { container } = render(<Main meta={null}>{null}</Main>);
 
       // const content = container.getElementsByClassName('content');
-      expect(container).toHaveLength(1);
+      expect(container).toBeDefined();
     });
   });
 });
